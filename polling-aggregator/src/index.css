@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+:root {
+  --dem-blue: #2563eb;
+  --rep-red: #dc2626;
+  --ind-gold: #d97706;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100 antialiased;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-slate-900;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-700 rounded-full;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-600;
+}
+
+/* Polling bar animations */
+@keyframes bar-fill {
+  from { width: 0%; }
+}
+.animate-bar-fill {
+  animation: bar-fill 0.8s ease-out forwards;
+}
+
+/* Glass morphism card */
+.glass-card {
+  @apply bg-slate-900/60 backdrop-blur-md border border-slate-800/50 rounded-2xl;
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400;
+}
