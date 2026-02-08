@@ -5,3 +5,9 @@ node_modules/
 .env
 .env.local
 .dev.vars
+screenshots/
+generate-mockups.js
+generate-detailed-mockups.js
+import-sample-data.js
+sample-data.sql
+README.md
